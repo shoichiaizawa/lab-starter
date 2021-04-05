@@ -45,7 +45,7 @@ steps:
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 4: EDIT HERE - INTERNAL COMMENT FOR STEP 4
-- title: Tips for manageing multiple Node.js versions
+- title: Tips for manageing multiple Node.js versions.
   description: Some important tips regarding Node.js version management are discussed in this step.
   event: issue_commented.created  # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
