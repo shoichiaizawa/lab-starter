@@ -1,12 +1,12 @@
 # Title
 
-This is the paragraph to would describe the concept. It may link to other resources, or include images. Try to avoid _too_ much information and _too_ many external links. The purpose of these paragraphs is to give the user the information they need to complete the activity, understand what they're doing, and understand why they're doing it.
+There are many ways to install Node.js runtime versions in your machine. Normally, a tool to manage multiple Node.js versions is widely used among the JavaScript based developers. This instruction teaches you how to install multiple Node.js runtime versions using **nvm – Node Version Manager**.
 
-### More detail 
+### More detail
 
 If there are concepts that should be described separately, they might belong in a subparagraph section like this one.
 
-## Step X: Description
+## Step 1: Install nvm – Node Version Manager
 
 Here, we'll describe generally what the user is about to do.
 
