@@ -13,47 +13,49 @@ template:
 # `before` block
 # Actions to take place after the learner registers, but before they start interacting with their repo
 
+# the type of action, full list at https://lab.github.com/docs/actions/
+# some actions require additional options, those should appear below `type:`
+# you can execute multiple actions in the `before` block
 before:
-- type: # the type of action, full list at https://lab.github.com/docs/actions/
-  # some actions require additional options, those should appear below `type:`
-  # you can execute multiple actions in the `before` block
+- type: respond
+  with: 01_first-response.md
 
 # Steps for the course
 # A list of steps that take the learner through the course
 # Create one step for each action that a learner will complete
 
 steps:
-# Step 1: EDIT HERE - INTERNAL COMMENT DESCRIBING STEP 
+# Step 1: EDIT HERE - INTERNAL COMMENT DESCRIBING STEP
 - title: Install nvm – Node Version Manager
   description: This step explains how to install nvm, Node Version Manager. You use nvm to install multiple Node.js versions.
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_commented.created  # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 2: EDIT HERE -INTERNAL COMMENT FOR STEP 2
 - title: Install Node.js using nvm
   description: Let's start installing Node.js versions using nvm.
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_commented.created  # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 3: EDIT HERE - INTERNAL COMMENT FOR STEP 3
 - title: Introduce the most used nvm commands
   description: This step explains the most frequently used nvm commands.
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_commented.created  # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 4: EDIT HERE - INTERNAL COMMENT FOR STEP 4
-- title: Tips for manageing multiple Node.js versions
+- title: Tips for manageing multiple Node.js versions.
   description: Some important tips regarding Node.js version management are discussed in this step.
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_commented.created  # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 5: EDIT HERE - INTERNAL COMMENT FOR STEP 5
 - title: Summary
   description: Course summary.
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_commented.created  # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
